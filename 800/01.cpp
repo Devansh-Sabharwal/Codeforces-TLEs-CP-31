@@ -3,7 +3,7 @@ https://codeforces.com/contest/1903/problem/A
 using namespace std;
 int main(){
     int tc;
-    cin>>tc;
+    cin>>tc; 
     while(tc--){
         int n , k;
         cin>>n>>k;
