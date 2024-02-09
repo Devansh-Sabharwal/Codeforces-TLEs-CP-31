@@ -1,7 +1,7 @@
 //https://codeforces.com/contest/1873/problem/C
 #include <bits/stdc++.h>
 using namespace std;
-int main() {
+int main() { 
     int tc;
     cin>>tc;
     while(tc--){
