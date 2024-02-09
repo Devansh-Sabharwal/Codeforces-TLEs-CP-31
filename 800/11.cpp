@@ -2,7 +2,7 @@ https://codeforces.com/problemset/problem/1866/A//
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    // int tc;
+    // int tc; 
     // cin>>tc;
     // while(tc--){
         int n;
