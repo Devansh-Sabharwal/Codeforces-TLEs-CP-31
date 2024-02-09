@@ -10,7 +10,7 @@ int main() {
         cin>>x>>s;
         for(k = 0;k<6;k++) {
             if(x.find(s) != -1){
-                cout<<k<<endl;
+                cout<<k<<endl; 
                 break;
             }
             x+=x;
