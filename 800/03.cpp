@@ -19,3 +19,4 @@ int main() {
         else cout<<count<<endl;
     }
 }
+
