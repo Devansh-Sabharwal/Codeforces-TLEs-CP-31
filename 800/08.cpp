@@ -1,6 +1,6 @@
 //https://codeforces.com/contest/1878/problem/A
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 int main(){
     int tc;
     cin>>tc;
