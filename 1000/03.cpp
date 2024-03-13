@@ -1,5 +1,5 @@
 //https://codeforces.com/contest/1876/problem/A
-//Helmets in Night Light
+//Helmets in Night Light 
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long 
