@@ -1,3 +1,4 @@
+//https://codeforces.com/problemset/problem/1849/B
 #include <bits/stdc++.h>
 #ifndef ONLINE_JUDGE
 #include <D:\CP\debug_Template.cpp>
