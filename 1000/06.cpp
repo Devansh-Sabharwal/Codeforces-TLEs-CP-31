@@ -7,7 +7,7 @@ using namespace std;
 #define ull unsigned long long
 #define endl "\n"
 
-int solve(){
+int solve(){ 
 }
 int main() {
 	int tc;
