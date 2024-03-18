@@ -5,7 +5,7 @@ using namespace std;
 #define ll long long 
 #define gcd __gcd
 #define ull unsigned long long
-#define endl "\n"
+#define endl "\n" 
 
 int solve(){ 
 }
