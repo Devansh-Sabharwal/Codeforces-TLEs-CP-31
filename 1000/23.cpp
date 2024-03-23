@@ -1,7 +1,6 @@
 //https://codeforces.com/problemset/problem/1474/B
 //Different Divisors
 #include <bits/stdc++.h>
-#ifndef ONLINE_JUDGE
 using namespace std;
 #define ll long long 
 #define gcd __gcd
