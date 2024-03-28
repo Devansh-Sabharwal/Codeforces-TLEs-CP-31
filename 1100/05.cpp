@@ -1,5 +1,5 @@
 //https://codeforces.com/problemset/problem/1899/B
-//250 Thousand Tons of TNT
+//250 Thousand Tons of TNT 
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long 
