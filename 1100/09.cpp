@@ -1,42 +1,39 @@
+//https://codeforces.com/problemset/problem/1850/E
+//Cardboard for Pictures
 #include <bits/stdc++.h>
-#ifndef ONLINE_JUDGE
-#include <D:\CP\debug_Template.cpp>
-#else
-#define debug(...)
-#define debugArr(...)
-#endif
 using namespace std;
 #define ll long long 
 #define gcd __gcd
-#define ull unsigned long long
+#define ll unsigned long long
 #define endl "\n"
 
-int solve(){
+long long solve(){
 }
 int main() {
-	int tc;
+	long long tc;
 	cin>>tc;
 	while(tc--){
-        ull n,c; cin>>n>>c;
-        vector<ull> arr(n); ull ans = -1;
+        ll n,c; cin>>n>>c;
+        vector<ll> arr(n); ll ans;
         for(auto &x : arr) cin>>x;
-        ull lo = 0, mid, hi = c;
-        while(lo<=hi){
-            mid = lo+(hi-lo)/2;
-            ull sum = 0;
-            for(int i=0;i<n;i++){
-                ull k = arr[i]+2*mid;
-                sum+=(k*k);
-            }
-            if(c==sum) {
-                ans = mid;
-                break;
-            }
-            else if(c>sum){
-                lo = mid+1;
-            }
-            else hi = mid-1;
+        long long l = 1, r = 1e9;
+        while(l <= r) {
+        long long mid = l + (r - l) / 2;
+        long long sum = 0;
+        for(long long i = 0; i < n; ++i) {
+            sum += (arr[i] + 2*mid)*(arr[i]+2*mid);
+            if(sum > c) break;
         }
+        if(sum == c) {
+            ans = mid;
+            break;
+        }
+        if(sum > c) {
+            r = mid - 1;
+        } else {
+            l = mid + 1;
+        }
+    }   
         cout<<ans<<endl;
 	}
 }
