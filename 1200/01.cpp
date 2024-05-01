@@ -41,22 +41,20 @@ int main() {
 	cin>>tc;
 	while(tc--){
 		int n;cin>>n;
-		vvi arr,brr;
+		vvi arr;
 		for(int i=0;i<3;i++){
 			vi temp(n);
 			read(temp,n);
-			brr.pb(temp);
-			vi a = solve(temp);
-			arr.pb(a);
+			arr.pb(temp);
 		}
 		int ans = 0, curr = 0;
-		for(int i=0;i<3;i++){
-			for(int j=0;j<3;j++){
-				if(arr[1][j]==arr[0][i]) continue;
-				for(int k=0;k<3;k++){
-					if(arr[2][k]==arr[0][i] or arr[2][k]==arr[1][j]) continue;
-					curr=brr[0][arr[0][i]]+brr[1][arr[1][j]]+brr[2][arr[2][k]];
-					if(ans<curr) ans = curr;
+		for(auto x : solve(arr[0])){
+			for(auto y : solve(arr[1])){
+				for(auto z: solve(arr[2])){
+					if(x!=y and y!=z and z!=x){
+						curr=arr[0][x]+arr[1][y]+arr[2][z];
+						ans = max(curr,ans);
+					}
 				}
 			}
 		}
